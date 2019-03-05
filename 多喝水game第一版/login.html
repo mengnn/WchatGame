@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- 设置 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+
+  <style>
+    html,body{
+      margin:0;
+      padding:0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .loginBox{
+      width: 100%;
+      height: 100%;
+      background: url(images/bg.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .title1{
+      width:90%;
+      margin-left: 5%;
+      position: absolute;
+      top: 20%;
+    }
+    .title2{
+      width:90%;
+      margin-left: 5%;
+      position: absolute;
+      top: 40%;
+    }
+    .gamePlay{
+      width:60%;
+      margin-left: 20%;
+      position: absolute;
+      top: 57%;
+    }
+
+  </style>
+
+</head>
+<body>
+<div class="loginBox">
+   <img src="images/title1.png" class="title1" />
+   <img src="images/title2.png" class="title2" />
+   <img src="images/play.png" class="gamePlay" onclick="startGame()" />
+</div>
+
+
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+<!--点击开始游戏 -->
+function startGame(){
+  window.location.href="templates/part1.html"
+}
+</script>
+</html>

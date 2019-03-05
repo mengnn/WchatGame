@@ -1,0 +1,730 @@
+﻿html,body{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+ul,li{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.partBox{
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.partMain{
+  width: 90%;
+  height: 100%;
+  margin:0 auto;
+}
+.partTop{
+  width: 100%;
+  overflow:hidden;
+}
+.partTime{
+  float: left;
+  margin-top: 9%;
+  width: 64%;
+  display: inline-block;
+}
+.partTime img{
+   width: 52%;
+}
+.nextBox{
+  float: right;
+  margin-top: 9%;
+  width: 35%;
+  display: inline-block;
+  min-height: 91px;
+}
+.nextBox img{
+  width: 76%;
+  float: right;
+   display: none;
+}
+.timeNum{
+  vertical-align: top;
+  margin-top: 20px;
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+}
+.partUl{
+  width: 100%;
+  /*overflow:hidden;*/
+  margin-top: 15px;
+  opacity: 0;
+}
+.partUl li{
+  float: left;
+  width: 29%;
+  margin-left: 3.25%;
+  overflow:hidden;
+  z-index: 1;
+}
+.partUl li img{
+  width: 100%;
+}
+.partulMain{
+  width: 88%;
+  margin:0 auto;
+  overflow: hidden;
+}
+.partulMain li{
+  width: 32.5%;
+  height: 100px;
+  float: left;
+  border:1px solid #ccc;
+  background: #F1F1F1;
+  /*position: relative;*/
+}
+.partMainbox{
+  width: 100%;
+  overflow:hidden;
+  /*position: relative;*/
+  padding-top: 5%;
+}
+
+
+#partDrop1_1 .partImg1{
+  animation: myfirst 3s ease-in 3.5s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst 3s ease-in 3.5s 1 normal; /* Firefox */
+  -webkit-animation:myfirst 3s ease-in 3.5s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst 3s ease-in 3.5s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst{
+  0%   {
+    left:5%;
+    top:40%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+@-moz-keyframes myfirst{
+  0%   {
+    left:5%;
+    top:40%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst{
+  0%   {
+    left:5%;
+    top:40%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+/****************************************************/
+
+#partDrop1_2 .partImg2{
+  animation: myfirst2 3s ease-in 4s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst2 3s ease-in 4s 1 normal; /* Firefox */
+  -webkit-animation:myfirst2 3s ease-in 4s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst2 3s ease-in 4s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst2{
+  0%   {
+    left:33%;
+    top:40%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-moz-keyframes myfirst2{
+  0%   {
+    left:33%;
+    top:40%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst2{
+  0%   {
+    left:33%;
+    top:40%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+/****************************************************/
+
+#partDrop1_3 .partImg3{
+  animation: myfirst3 3s ease-in 3s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst3 3s ease-in 3s 1 normal; /* Firefox */
+  -webkit-animation:myfirst3 3s ease-in 3s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst3 3s ease-in 3s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst3{
+  0%   {
+    left:62%;
+    top:40%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-moz-keyframes myfirst3{
+  0%   {
+    left:62%;
+    top:40%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst3{
+  0%   {
+    left:62%;
+    top:40%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+/****************************************************/
+
+#partDrop1_4 .partImg4{
+  animation: myfirst4 3s ease-in 4s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst4 3s ease-in 4s 1 normal; /* Firefox */
+  -webkit-animation:myfirst4 3s ease-in 4s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst4 3s ease-in 4s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst4{
+  0%   {
+    left:5%;
+    top:50%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-moz-keyframes myfirst4{
+  0%   {
+    left:5%;
+    top:50%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst4{
+  0%   {
+    left:5%;
+    top:50%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+/****************************************************/
+
+#partDrop1_5 .partImg5{
+  animation: myfirst5 3s ease-in 3.2s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst5 3s ease-in 3.2s 1 normal; /* Firefox */
+  -webkit-animation:myfirst5 3s ease-in 3.2s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst5 3s ease-in 3.2s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst5{
+  0%   {
+    left:33%;
+    top:50%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-moz-keyframes myfirst5{
+  0%   {
+    left:33%;
+    top:50%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst5{
+  0%   {
+    left:33%;
+    top:50%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+/****************************************************/
+
+#partDrop1_6 .partImg6{
+  animation: myfirst6 3s ease-in 4.5s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst6 3s ease-in 4.5s 1 normal; /* Firefox */
+  -webkit-animation:myfirst6 3s ease-in 4.5s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst6 3s ease-in 4.5s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst6{
+  0%   {
+    left:62%;
+    top:50%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-moz-keyframes myfirst6{
+  0%   {
+    left:62%;
+    top:50%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst6{
+  0%   {
+    left:62%;
+    top:50%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:50%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+/****************************************************/
+
+#partDrop1_7 .partImg7{
+  animation: myfirst7 3s ease-in 5s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst7 3s ease-in 5s 1 normal; /* Firefox */
+  -webkit-animation:myfirst7 3s ease-in 5s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst7 3s ease-in 5s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst7{
+  0%   {
+    left:5%;
+    top:60%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-moz-keyframes myfirst7{
+  0%   {
+    left:5%;
+    top:60%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst7{
+  0%   {
+    left:5%;
+    top:60%;
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+/****************************************************/
+
+#partDrop1_8 .partImg8{
+  animation: myfirst8 3s ease-in 3.5s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst8 3s ease-in 3.5s 1 normal; /* Firefox */
+  -webkit-animation:myfirst8 3s ease-in 3.5s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst8 3s ease-in 3.5s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst8{
+  0%   {
+    left:33%;
+    top:60%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-moz-keyframes myfirst8{
+  0%   {
+    left:33%;
+    top:60%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst8{
+  0%   {
+    left:33%;
+    top:60%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+/****************************************************/
+
+#partDrop1_9 .partImg9{
+  animation: myfirst9 3s ease-in 2.5s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst9 3s ease-in 2.5s 1 normal; /* Firefox */
+  -webkit-animation:myfirst9 3s ease-in 2.5s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst9 3s ease-in 2.5s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst9{
+  0%   {
+    left:62%;
+    top:60%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-moz-keyframes myfirst9{
+  0%   {
+    left:62%;
+    top:60%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+@-webkit-keyframes myfirst9{
+  0%   {
+    left:62%;
+    top:60%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%;
+     top:60%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}
+
+

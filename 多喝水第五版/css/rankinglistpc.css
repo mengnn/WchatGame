@@ -1,0 +1,132 @@
+﻿ html,body{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+ul,li{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.rankingBox{
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  overflow:hidden;
+}
+.rankingTop{
+  width: 90%;
+  overflow:hidden;
+  margin-left: 5%;
+  padding-top:10%;
+}
+.rangkingTopleft{
+  float: left;
+  width:40%;
+  text-align: center;
+  height: 330px;
+  line-height: 150px;
+}
+.rangkingTopright{
+  float: right;
+  width:59%;
+  height: 330px;
+  background: url(../images/orders.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.rangkingTopleft img{
+  width: 195px;
+  vertical-align: top;
+  margin-top: 84px;
+}
+.personImg{
+  width: 120px;
+  height: 120px;
+  margin-left: 11%;
+  margin-top: 20%;
+}
+.personName{
+  display: inline-block;
+  width: 56%;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 118px;
+  vertical-align: top;
+  font-size:33px;
+  text-indent: 12px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.personTime{
+  width: 80%;
+  font-size:35px;
+  margin:0;
+  padding:0;
+  text-align: center;
+  margin-top: 18px;
+  margin-left: 10%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.imgB{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.rankingMain{
+  width: 88%;
+  margin:20px auto;
+ /* border:1px solid #fff;*/
+  /*overflow-y: auto;
+  height: 54%;*/
+  overflow:hidden;
+}
+.rankingMain li{
+  width: 100%;
+  height: 110px;
+  margin-bottom: 50px;
+}
+.rankingMain li .rankingPosition{
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+}
+.rankingMain li .rankingPerson{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  margin-left: 30px;
+}
+ .rankingMain li .rankingName{
+  display: inline-block;
+  margin-top: 31px;
+  vertical-align: top;
+  color: #000;
+  font-size: 35px;
+  width: 150px;
+  margin-left: 15px;
+  font-family: serif;
+  font-weight: normal;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.rankingMain li .rankingTime{
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 5px;
+  color: #000;
+  font-size: 50px;
+  vertical-align: top;
+  width: 240px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}

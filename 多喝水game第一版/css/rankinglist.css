@@ -1,0 +1,73 @@
+﻿ html,body{
+      margin:0;
+      padding:0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    ul,li{
+      list-style: none;
+      margin:0;
+      padding:0;
+    }
+    .rankingBox{
+      width: 100%;
+      height: 100%;
+      /*background: url(images/login.jpg) 0 0 no-repeat;
+      background-size: 100% 100%;*/
+      background: #5C9AD7;
+    }
+    .rankingTop{
+      width: 90%;
+      overflow:hidden;
+      margin-left: 5%;
+    }
+    .rankingTopmain{
+      width: 99%;
+      height: 40px;
+      border:1px solid #fff;
+      text-align: center;
+      line-height: 40px;
+      color:#fff;
+      margin:40px auto 0;
+    }
+    .rankingMain{
+      width: 88%;
+      margin:20px auto;
+     /* border:1px solid #fff;*/
+      overflow-y: auto;
+      height: 81%;
+    }
+    .rankingMain li{
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    .rankingMain li img{
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      vertical-align: top;
+      margin-top: 2px;
+    }
+    .rankingMain li .rankingPosition{
+      display: inline-block;
+      margin: 9px 8px 0 8px;
+      color: #fff;
+      width: 19px;
+      font-size: 18px;
+    }
+     .rankingMain li .rankingGrad{
+      display: inline-block;
+      margin-top: 9px;
+      color: yellow;
+      font-size: 16px;
+      width: 62px;
+    }
+    .rankingMain li .rankingTime{
+      display: inline-block;
+      margin-top: 9px;
+      margin-left: 5px;
+      color: #fff;
+      font-size: 16px;
+    }

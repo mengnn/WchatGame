@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关卡</title>
+    <!-- 设置 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <link rel="stylesheet" type="text/css" href="../css/partOne.css">
+
+</head>
+<body>
+<div class="partBox">
+  <div class="partMain">
+    <div class="partTop">
+      <div class="partTime">
+        <img src="../images/time.png"/>
+        <span class="timeNum"></span>
+      </div>
+      <div class="nextBox">
+        <img src="../images/nextpart.png" onclick="nextPart()" />
+      </div>
+    </div>
+    <ul class="partUl">
+      <li class="partDrag" id="part1_4">
+        <img src="../images/part4/part4-4.png"/>
+      </li>
+      <li class="partDrag" id="part1_8">
+        <img src="../images/part4/part4-8.png"/>
+      </li>
+      <li class="partDrag" id="part1_7">
+        <img src="../images/part4/part4-7.png"/>
+      </li>
+      <li class="partDrag" id="part1_3">
+        <img src="../images/part4/part4-3.png"/>
+      </li>
+      <li class="partDrag" id="part1_5">
+        <img src="../images/part4/part4-5.png"/>
+      </li>
+      <li class="partDrag" id="part1_9">
+        <img src="../images/part4/part4-9.png"/>
+      </li>
+      <li class="partDrag" id="part1_1">
+        <img src="../images/part4/part4-1.png"/>
+      </li>
+      <li class="partDrag" id="part1_2">
+        <img src="../images/part4/part4-2.png"/>
+      </li>
+      <li class="partDrag" id="part1_6">
+        <img src="../images/part4/part4-6.png"/>
+      </li>
+    </ul>
+    <div class="partMainbox">
+      <ul class="partulMain">
+        <li id="partDrop1_1">
+          <img src="../images/part4/part4-1.png" class="partImg1" />
+        </li>
+        <li id="partDrop1_2">
+          <img src="../images/part4/part4-2.png" class="partImg2" />
+        </li>
+        <li id="partDrop1_3">
+          <img src="../images/part4/part4-3.png" class="partImg3" />
+        </li>
+        <li id="partDrop1_4">
+          <img src="../images/part4/part4-4.png" class="partImg4" />
+        </li>
+        <li id="partDrop1_5">
+          <img src="../images/part4/part4-5.png" class="partImg5" />
+        </li>
+        <li id="partDrop1_6">
+          <img src="../images/part4/part4-6.png" class="partImg6" />
+        </li>
+        <li id="partDrop1_7">
+          <img src="../images/part4/part4-7.png" class="partImg7" />
+        </li>
+        <li id="partDrop1_8">
+          <img src="../images/part4/part4-8.png" class="partImg8" />
+        </li>
+        <li id="partDrop1_9">
+          <img src="../images/part4/part4-9.png" class="partImg9" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jquery.ui.touch-punch.min.js"></script>
+<script>
+  <!-- 获取游戏时间 -->
+  var gameMinute=0;
+  var storage = window.localStorage;
+  var  getTime= storage.getItem("gameTime");
+  // alert(name)
+  var gameSecond=parseInt(getTime);
+  var gameTime=setInterval(function(){
+    gameSecond+=1;
+    gameMinute=parseInt(gameSecond/60); //获取分钟
+    var endSecond=gameSecond%60; //获取最后秒
+    if(gameMinute>=1){
+      $(".timeNum").html(gameMinute+"分"+endSecond+"秒");
+    }else{
+      $(".timeNum").html(endSecond+"秒");
+    }
+
+  },1000);
+
+// 进入下一关
+  function nextPart(){
+    // alert(gameSecond);
+    localStorage.setItem('gameTime', gameSecond);
+    window.location.href="part5.html"
+  }
+
+
+
+
+</script>
+<script type="text/javascript" src="../js/partOne.js"></script>
+</html>

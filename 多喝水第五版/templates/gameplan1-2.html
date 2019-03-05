@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关卡</title>
+    <!-- 设置 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <style type="text/css">
+      body,html{
+        width: 100%;
+        height: 100%;
+        margin:0;
+        padding:0;
+      }
+      .gameBox{
+        width: 100%;
+        height: 100%;
+        background: url(../images/bg.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        overflow:hidden;
+      }
+      .explain{
+        width: 110%;
+        position: absolute;
+        top:20%;
+        left: -5%
+      }
+      .nextBox{
+        position: absolute;
+        z-index: 111;
+        bottom: 4%;
+        width: 50%;
+        left: 25%;
+      }
+	  
+	  .reverse{
+        position: absolute;
+        z-index: 111;
+        top: 7%;
+        width: 100%;
+      }
+    </style>
+
+</head>
+<body>
+<div class="gameBox">
+ <img src="../images/reverse.png" class="reverse" />
+ <img src="../images/1-2.gif" class="explain" />
+ <img src="../images/palyBtn.png" class="nextBox" onclick="nextPart()" />
+</div>
+
+
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jquery.ui.touch-punch.min.js"></script>
+<script src="../public-js/js.cookie.js"></script>
+<script src="../public-js/js.storage.min.js"></script>
+<script>
+
+  // 进入下一关
+  function nextPart(){
+    window.location.href="part2.html"
+  }
+
+
+</script>
+</html>

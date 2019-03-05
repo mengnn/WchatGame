@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关卡</title>
+    <!-- 设置 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <style type="text/css">
+      body,html{
+        width: 100%;
+        height: 100%;
+        margin:0;
+        padding:0;
+      }
+      .gameBox{
+        width: 100%;
+        height: 100%;
+        background: url(../images/bg.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        overflow:hidden;
+      }
+      .explain{
+        width: 96%;
+        position: absolute;
+        top:2%;
+        left: 2%
+      }
+      .nextBox{
+        position: absolute;
+        z-index: 111;
+        bottom: 4%;
+        width: 50%;
+        left: 25%;
+      }
+    </style>
+
+</head>
+<body>
+<div class="gameBox">
+ <img src="../images/explain.png" class="explain" />
+ <img src="../images/palyBtn.png" class="nextBox" onclick="nextPart()" />
+</div>
+
+
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script>
+
+  // 进入下一关
+  function nextPart(){
+    window.location.href="part1.html"
+  }
+
+
+</script>
+</html>

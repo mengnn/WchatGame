@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关卡</title>
+    <!-- 设置 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      body,html{
+        width: 100%;
+        height: 100%;
+        margin:0;
+        padding:0;
+      }
+      .gameBox{
+        width: 100%;
+        height: 100%;
+        background: url(../images/bg.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        overflow:hidden;
+      }
+      .explain{
+        width: 96%;
+        position: absolute;
+        top:7%;
+        left: 4%
+      }
+      .nextBox{
+        position: absolute;
+        z-index: 111;
+        bottom: 4%;
+        width: 50%;
+        left: 25%;
+      }
+      .musicBar {
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          z-index: 20;
+          left: 10px;
+          bottom: 10px;
+      }
+      img.musicOn {
+          animation: rolling 1.2s linear infinite;
+          -webkit-animation: rolling 1.2s linear infinite;
+      }
+    </style>
+
+</head>
+<body>
+<div class="gameBox">
+ <img src="../images/explain.png" class="explain" />
+ <img src="../images/palyBtn.png" class="nextBox" onclick="nextPart()" />
+
+ <img id="playMusic" dir="1" class="musicBar musicOn" src="../images/music.png">
+ <audio id="audio" src="../images/1.mp3" autoplay="autoplay" loop preload="auto" style="display:none;"></audio>
+</div>
+
+
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jquery.ui.touch-punch.min.js"></script>
+<script src="../public-js/js.cookie.js"></script>
+<script src="../public-js/js.storage.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js "></script>
+<script>
+  if(window.localStorage.getItem("flag")!="login")
+	  window.location.href="../login.html"
+  else
+	  localStorage.setItem('flag', 'gameplan');
+
+  // 进入下一关
+  function nextPart(){
+    window.location.href="part1.html"
+  }
+
+  var $audio = document.getElementById("audio");
+  var once=1;
+// $(function(){
+  
+  //触发音乐播放和暂停，解决ios不能自动播放音乐问题
+      // $("body").click(function(){
+      //   if(once==1 && $audio.paused){
+      //      $audio.play();
+      //      once=0;
+      //   }
+      // });
+
+    function autoPlayAudio() {
+        wx.config({
+            // 配置信息, 即使不正确也能使用 wx.ready
+            debug: false,
+            appId: '',
+            timestamp: 1,
+            nonceStr: '',
+            signature: '',
+            jsApiList: []
+        });
+        wx.ready(function() {
+            // var globalAudio=document.getElementById("bgMusic");
+            $("#audio").get(0).play();
+        });
+    };
+    autoPlayAudio();
+
+    $("#playMusic").click(function(){
+      var dirImg = $(this).attr("dir");
+      if(dirImg == 1){
+        $(this).attr("dir","0");
+        $audio.pause();
+        $(this).removeClass("musicOn");
+      }else if(dirImg == 0){
+        $(this).attr("dir","1");
+        $audio.play();
+        $(this).addClass("musicOn");
+      }
+    })
+//})
+
+
+</script>
+</html>

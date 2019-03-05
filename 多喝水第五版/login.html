@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- 设置 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <!-- <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"> -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+  <style>
+    html,body{
+      margin:0;
+      padding:0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .loginBox{
+      width: 100%;
+      height: 100%;
+      background: url(images/bg.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .title1{
+      width:90%;
+      margin-left: 5%;
+      position: absolute;
+      top: 20%;
+      -webkit-transform-origin: center center;
+      -webkit-animation-name: shaky-slow;
+      -webkit-animation-duration: 4s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+      -webkit-animation-delay: 0s;
+      -webkit-animation-play-state: running;
+    }
+    .title2{
+      width:90%;
+      margin-left: 5%;
+      position: absolute;
+      top: 40%;
+      -webkit-transform-origin: center center;
+      -webkit-animation-name: shaky-slow;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+      -webkit-animation-delay: 0s;
+      -webkit-animation-play-state: running;
+    }
+    .gamePlay{
+      width:60%;
+      margin-left: 20%;
+      position: absolute;
+      top: 57%;
+      -webkit-animation: scaleDraw 4s ease-in-out infinite;
+    }
+        @keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+            0%{
+                transform: scale(1);  /*开始为原始大小*/
+            }
+            25%{
+                transform: scale(1.2); /*放大1.1倍*/
+            }
+            50%{
+                transform: scale(1);
+            }
+            75%{
+                transform: scale(1.2);
+            }
+        }
+        
+       @-webkit-keyframes shaky-slow {0% {-webkit-transform: translate(0px, 0px) rotate(0deg)}2% {-webkit-transform: translate(-1px, 1.5px) rotate(1.5deg)}4% {-webkit-transform: translate(1.3px, 0px) rotate(-0.5deg)}6% {-webkit-transform: translate(1.4px, 1.4px) rotate(-2deg)}8% {-webkit-transform: translate(-1.3px, -1px) rotate(-1.5deg)}10% {-webkit-transform: translate(1.4px, 0px) rotate(-2deg)}12% {-webkit-transform: translate(-1.3px, -1px) rotate(-2deg)}14% {-webkit-transform: translate(1.5px, 1.3px) rotate(1.5deg)}16% {-webkit-transform: translate(1.5px, -1.5px) rotate(-1.5deg)}18% {-webkit-transform: translate(1.3px, -1.3px) rotate(-2deg)}20% {-webkit-transform: translate(1px, 1px) rotate(-0.5deg)}22% {-webkit-transform: translate(1.3px, 1.5px) rotate(-2deg)}24% {-webkit-transform: translate(-1.4px, -1px) rotate(2deg)}26% {-webkit-transform: translate(1.3px, -1.3px) rotate(0.5deg)}28% {-webkit-transform: translate(1.6px, -1.6px) rotate(-2deg)}30% {-webkit-transform: translate(-1.3px, -1.3px) rotate(-1.5deg)}32% {-webkit-transform: translate(-1px, 0px) rotate(2deg)}34% {-webkit-transform: translate(1.3px, 1.3px) rotate(-0.5deg)}36% {-webkit-transform: translate(1.3px, 1.6px) rotate(1.5deg)}38% {-webkit-transform: translate(1.3px, -1.6px) rotate(1.5deg)}40% {-webkit-transform: translate(-1.4px, -1px) rotate(-0.5deg)}42% {-webkit-transform: translate(-1.4px, 1.3px) rotate(-0.5deg)}44% {-webkit-transform: translate(-1.6px, 1.4px) rotate(0.5deg)}46% {-webkit-transform: translate(-2.1px, -1.3px) rotate(-0.5deg)}48% {-webkit-transform: translate(1px, 1.6px) rotate(1.5deg)}50% {-webkit-transform: translate(1.6px, 1.6px) rotate(1.5deg)}52% {-webkit-transform: translate(-1.4px, 1.6px) rotate(0.5deg)}54% {-webkit-transform: translate(1.6px, -1px) rotate(-2deg)}56% {-webkit-transform: translate(1.3px, -1.6px) rotate(-2deg)}58% {-webkit-transform: translate(-1.3px, -1.6px) rotate(0.5deg)}60% {-webkit-transform: translate(1.3px, 1.6px) rotate(-0.5deg)}62% {-webkit-transform: translate(0px, 0px) rotate(-1.5deg)}64% {-webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg)}66% {-webkit-transform: translate(1.6px, -1.6px) rotate(0.5deg)}68% {-webkit-transform: translate(0px, -1.6px) rotate(-2deg)}70% {-webkit-transform: translate(-1.6px, 1px) rotate(1.5deg)}72% {-webkit-transform: translate(-1.6px, 1.6px) rotate(2deg)}74% {-webkit-transform: translate(1.3px, -1.6px) rotate(-0.5deg)}76% {-webkit-transform: translate(1.4px, 1px) rotate(-0.5deg)}78% {-webkit-transform: translate(-1px, 1.4px) rotate(2deg)}80% {-webkit-transform: translate(1.4px, 1.6px) rotate(2deg)}82% {-webkit-transform: translate(-1.6px, -1.6px) rotate(-0.5deg)}84% {-webkit-transform: translate(-1.4px, 1.4px) rotate(-2deg)}86% {-webkit-transform: translate(1px, 1.4px) rotate(-2deg)}88% {-webkit-transform: translate(-1.4px, 1.4px) rotate(-1.5deg)}90% {-webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg)}92% {-webkit-transform: translate(-1.6px, 1.6px) rotate(2deg)}94% {-webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg)}96% {-webkit-transform: translate(-1.4px, 1.3px) rotate(-2deg)}98% {-webkit-transform: translate(1.3px, 1px) rotate(-0.5deg)}}
+
+    .musicBar {
+	    width: 30px;
+	    height: 30px;
+	    position: absolute;
+	    z-index: 20;
+	    left: 10px;
+	    bottom: 10px;
+	}
+	img.musicOn {
+	    animation: rolling 1.2s linear infinite;
+	    -webkit-animation: rolling 1.2s linear infinite;
+	}
+  </style>
+
+</head>
+<body>
+<div class="loginBox">
+   <img src="images/title1.png" class="title1" />
+   <img src="images/title2.png" class="title2" />
+   <img src="images/play.png" class="gamePlay" onclick="startGame()" />
+
+   <img id="playMusic" dir="1" class="musicBar musicOn" src="images/music.png">
+   <audio id="audio" src="images/1.mp3" autoplay="autoplay" loop preload="auto" style="display:none;"></audio>
+   
+   
+</div>
+
+
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="public-js/js.cookie.js"></script>
+<script src="public-js/js.storage.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js "></script>
+<!-- <script src="data-js/login.js"></script> -->
+<script>
+<!--点击开始游戏 -->
+function startGame(){
+  localStorage.clear();
+  localStorage.setItem('flag', 'login');
+  window.location.href="templates/gameplan.html"
+};
+
+var $audio = document.getElementById("audio");
+var once=1;
+// $(function(){
+	
+	//触发音乐播放和暂停，解决ios不能自动播放音乐问题
+      // $("body").click(function(){
+      //   if(once==1 && $audio.paused){
+      //      $audio.play();
+      //      once=0;
+      //   }
+      // });
+
+    function autoPlayAudio() {
+        wx.config({
+            // 配置信息, 即使不正确也能使用 wx.ready
+            debug: false,
+            appId: '',
+            timestamp: 1,
+            nonceStr: '',
+            signature: '',
+            jsApiList: []
+        });
+        wx.ready(function() {
+            // var globalAudio=document.getElementById("bgMusic");
+            $("#audio").get(0).play();
+        });
+    };
+    autoPlayAudio();
+
+    $("#playMusic").click(function(){
+    	var dirImg = $(this).attr("dir");
+    	if(dirImg == 1){
+    		$(this).attr("dir","0");
+    		$audio.pause();
+    		$(this).removeClass("musicOn");
+    	}else if(dirImg == 0){
+    		$(this).attr("dir","1");
+    		$audio.play();
+    		$(this).addClass("musicOn");
+    	}
+    })
+//})
+</script>
+</html>

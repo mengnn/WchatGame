@@ -1,0 +1,120 @@
+﻿html,body{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+ul,li{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.partBox{
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.partMain{
+  width: 90%;
+  height: 100%;
+  margin:0 auto;
+}
+.partTop{
+  width: 100%;
+  overflow:hidden;
+}
+.partTime{
+  float: left;
+  margin-top: 9%;
+  width: 64%;
+  display: inline-block;
+}
+.partTime img{
+   width: 52%;
+}
+.nextBox{
+  float: right;
+  margin-top: 9%;
+  width: 35%;
+  display: inline-block;
+  min-height: 91px;
+}
+.nextBox img{
+  width: 76%;
+  float: right;
+   display: none;
+}
+.timeNum{
+  vertical-align: top;
+  margin-top: 20px;
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+}
+.partUl{
+  width: 100%;
+  /*overflow:hidden;*/
+  margin-top: 15px;
+  opacity: 0;
+}
+.partUl li{
+  float: left;
+  width: 29%;
+  margin-left: 3.25%;
+  overflow:hidden;
+  z-index: 1;
+}
+.partUl li img{
+  width: 100%;
+}
+.partulMain{
+  width: 88%;
+  margin:0 auto;
+  overflow: hidden;
+}
+.partulMain li{
+  width: 32.5%;
+  height: 100px;
+  float: left;
+  border:1px solid #ccc;
+  background: #F1F1F1;
+}
+.partMainbox{
+  width: 100%;
+  overflow:hidden;
+  /*position: relative;*/
+  padding-top: 5%;
+}
+
+
+
+
+#partDrop1_1 img{
+  animation: myfirst 3s ease-in 1s 1 normal;/*动画名 时间 速度曲线 固定动画何时开始 动画执行次数（infinite） 规定动画是否反向播放（normal）*/
+  -moz-animation:myfirst 3s ease-in 1s 1 normal; /* Firefox */
+  -webkit-animation:myfirst 3s ease-in 1s 1 normal; /* Safari and Chrome */
+  -o-animation:myfirst 3s ease-in 1s 1 normal; /* Opera */
+  position:absolute;
+}
+@keyframes myfirst{
+  0%   {
+    left:5%;
+    top:40%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  45%  {
+     left:-3%
+     top:40%;
+     transform: rotateY(130deg);
+    -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(130deg);
+  }
+  100% {
+    left:50%;
+    top:100%;
+  }
+}

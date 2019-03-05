@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>排行榜</title>
+    <!-- 设置 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <link rel="stylesheet" type="text/css" href="../css/rankinglist.css"/>
+
+</head>
+<body>
+<div class="rankingBox">
+  <div class="rankingTop">
+    <div class="rangkingTopleft">
+      <img src="../images/score.png"/>
+    </div>
+    <div class="rangkingTopright">
+        <img src="../images/1.jpg" class="personImg" id="headimgurl"/>
+        <span class="personName" id="nickname">孟繁胜游</span>
+        <p class="personTime" id="gameTime">18分18秒</p>
+    </div>
+  </div>
+  <img src="../images/bang.png" class="imgB" />
+  <ul class="rankingMain">
+    <li>
+      <img src="../images/n1.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <li>
+      <img src="../images/n2.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <li>
+      <img src="../images/n3.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <li>
+      <img src="../images/n4.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <li>
+      <img src="../images/n5.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <li>
+      <img src="../images/n6.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <li>
+      <img src="../images/n7.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <li>
+      <img src="../images/n8.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <li>
+      <img src="../images/n9.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li>
+    <!-- <li>
+      <img src="../images/n14.png" class="rankingPosition"/>
+      <img src="../images/1.jpg" class="rankingPerson" />
+      <b class="rankingName">孟繁胜游</b>
+      <span class="rankingTime">2分30秒</span>
+    </li> -->
+  </ul>
+</div>
+
+
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../public-js/js.cookie.js"></script>
+<script src="../public-js/js.storage.min.js"></script>
+<script src="../data-js/rankinglist.js"></script>
+<script>
+/* if(window.localStorage.getItem("flag")!="part6")
+	  window.location.href="../login.html"
+else
+	  localStorage.setItem('flag', 'rankinglist');  */
+  var storage = window.localStorage;
+  var getTime= storage.getItem("gameTime");
+  // alert(name)
+  var gameSecond=parseInt(getTime);
+  var gameMinute=parseInt(gameSecond/60); //获取分钟
+  var endSecond=gameSecond%60; //获取最后秒
+  $(".timeNum").html(gameMinute+"分"+endSecond+"秒");
+  if(gameMinute>=1){
+      $(".personTime").html(gameMinute+"分"+endSecond+"秒");
+    }else{
+      $(".personTime").html(endSecond+"秒");
+    }
+</script>
+</html>
